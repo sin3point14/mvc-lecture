@@ -9,6 +9,7 @@
 1. Install composer using:
     ```console
     > curl -s https://getcomposer.org/installer | php
+    > sudo mv composer.phar /usr/local/bin/composer
     ```
 
 1. Install dependencies and dump-autoload:
