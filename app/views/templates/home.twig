@@ -1,0 +1,23 @@
+{% extends "templates/base.twig" %}
+
+{% block title %}My website home{% endblock %}
+
+{% block body %}
+<h1>Hello, World!</h1>
+<form action="/" method="POST">
+  <p><textarea name="caption" placeholder="Caption"></textarea></p>
+  <p><input type="submit" /></p>
+  {% if posted %}
+  <p>
+    <em><strong>Successfully</strong> posted!</em>
+  </p>
+  {% endif %}
+</form>
+<ol>
+  {% for post in posts %}
+  <li>
+    <a href="/post/{{ post.id }}">{{ post.caption }}</a>
+  </li>
+  {% endfor %}
+</ol>
+{% endblock %}
