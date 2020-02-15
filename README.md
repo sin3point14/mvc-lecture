@@ -27,5 +27,6 @@
 
 1. Serve the public folder at any port (say 8000):
     ```console
+	> cd public
     > php -S localhost:8000
     ```
