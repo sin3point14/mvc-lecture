@@ -14,8 +14,8 @@
 
 1. Install dependencies and dump-autoload:
     ```console
-    > php composer.phar install
-    > php composer.phar dump-autoload
+    > composer install
+    > composer dump-autoload
     ```
 
 1. Copy `config/sample.config.php` as `config/config.php` and edit it accordingly:
